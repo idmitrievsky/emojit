@@ -1,13 +1,12 @@
 [tool.poetry]
 name = "emojit"
-version = "0.1.0"
-description = ""
+version = "1.0.1"
+description = "Support for emoji digits in Python"
 authors = ["Ivan Dmitrievskii <yellow.iron9441@headless.place>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
