@@ -15,7 +15,7 @@ emoji_str = emj("4️⃣0️⃣2️⃣")
 assert isinstance(emoji_str, str) is True
 assert int(emoji_str) == 402
 ```
-<sub><sup>Please, don't actually use it.</sup></sub>
+<sub><sup>Please, don't actually use this.</sup></sub>
 
 ## Advanced usage
 
@@ -38,4 +38,4 @@ assert int(emj("💯")) == int(emj("1️⃣0️⃣0️⃣"))
 
 ## Support
 
-This package is considered feature complete. It will be archived once the functionality is upstreamed into Python standard library.
+This package is considered feature complete. It will be archived once the functionality is upstreamed into the Python standard library.

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "emojit"
-version = "1.0.1"
+version = "1.0.2"
 description = "Support for emoji digits in Python"
 authors = ["Ivan Dmitrievskii <yellow.iron9441@headless.place>"]
 readme = "README.md"
