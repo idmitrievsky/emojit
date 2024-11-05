@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "emojit"
+version = "0.1.0"
+description = ""
+authors = ["Ivan Dmitrievskii <yellow.iron9441@headless.place>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
