@@ -34,6 +34,7 @@ from emojit import emj
 
 assert int(emj("🔟")) == int(emj("1️⃣0️⃣"))
 assert int(emj("💯")) == int(emj("1️⃣0️⃣0️⃣"))
+assert int(emj("🔢")) == int(emj("1️⃣2️⃣3️⃣4️⃣"))
 ```
 
 ## Support
