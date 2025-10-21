@@ -29,7 +29,7 @@ assert isinstance(emoji_str, str) is True
 assert int(emoji_str) == 402
 ```
 
-To achieve this, you have to do two things. Find your `site-packages` directory:
+To achieve this, you first need to find your `site-packages` directory:
 ```shell
 python -c "import site; print(site.getsitepackages())"
 ```
