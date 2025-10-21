@@ -17,6 +17,38 @@ assert int(emoji_str) == 402
 ```
 <sub><sup>Please, don't actually use this.</sup></sub>
 
+## Simplified usage
+
+You can simplify the previous example as:
+```python
+# coding: emoji-digit
+
+emoji_str = "4️⃣0️⃣2️⃣"
+
+assert isinstance(emoji_str, str) is True
+assert int(emoji_str) == 402
+```
+
+To achieve this, you have to do two things. Find your `site-packages` directory:
+```shell
+python -c "import site; print(site.getsitepackages())"
+```
+
+And then create a new file called `sitecustomize.py` in this directory with the following contents:
+```python
+import builtins
+import codecs
+
+import emojit
+import emojit.emoji_digit_codec
+
+builtins.emj = emojit.emj
+
+codecs.register(emojit.emoji_digit_codec.search_function)
+```
+
+You can read more about codecs [here](https://docs.python.org/3/library/codecs.html).
+
 ## Advanced usage
 
 ### Underscores as visual separators
